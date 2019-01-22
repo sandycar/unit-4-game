@@ -6,9 +6,9 @@
 </head>
 <style type="text/css" src = "assets/css/style.css"></style>
 <body>
-<div class = "jumbotron jumbotron-fluid">
+<div class = "bg-white jumbotron jumbotron-fluid">
 	<div class = "container">
-		<h1 class = "display-3">Crystal Collector</h1>
+		<h1 class = "display-3" id = "gameName">Crystal Collector</h1>
 		<p class = "lead"> Welcome to the Crystal Collector Game!</p>
 		<hr class = "my-4">
 		<p class = "lead text-info"> To play: Try and match the number on the screen by clikcing on the crytsal. Watch your value add up, but try not to go over the number you're trying to match! Each crystal has a hidden value and once you've won, these crystals get a new value assigned to them and you get a new number generated to match.</p>
@@ -16,16 +16,27 @@
 	</div>
 	
 </div>
-	<div id= 'Crytsals'>
-		<span>
-			<img id = "blue" src="assets/images/blue.png">
-			<img id = "green" src="assets/images/green.png">
-			<img id = "red" src="assets/images/red.png">
-			<img id = "yellow" src="assets/images/yellow.png">
-		</span>
-	</div>
-	<div class = "display-4" id = 'randomNumber'></div>
-	<div class = "display-4"id = 'gemsCollected'></div>
+	
+<div class = "container" id= 'Crytsals'>
+	<span>
+		<img id = "blue" src="assets/images/blue.png">
+		<img id = "green" src="assets/images/green.png">
+		<img id = "red" src="assets/images/red.png">
+		<img id = "yellow" src="assets/images/yellow.png">
+	</span>	
+</div>
+<div class = "container display-4" id = 'randomNumber'></div>
+<div class = "container display-4"id = 'gemsCollected'></div>
+
+<div class = "container score">
+	<p>wins: 
+		<span id = "wins"></span>
+
+	</p>
+	<p>losses: 
+		<span id = "losses"></span>
+	</p>	
+</div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

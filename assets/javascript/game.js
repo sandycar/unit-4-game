@@ -1,9 +1,11 @@
 console.log('hello')
 
-var crystalsArr = []
-var crystals = 0
-var generatedNum = 0
-var currentGemValue = 0
+var crystalsArr = [];
+var crystals = 0;
+var generatedNum = 0;
+var currentGemValue = 0;
+var wins = 0;
+var losses = 0;
 
 // Here we are generating a random number for each variable in the array called crystalsArr
 	// Then we are pushing these random numbers into the array
@@ -39,6 +41,8 @@ $('#blue').on('click', function(){
 	$('#gemsCollected').html(currentGemValue);
 })
 
+// Yellow gem value
+
 $('#yellow').attr("value", crystalsArr[1]);
 $('#yellow').on('click', function(){
 	var yellowValue = $('#yellow').attr("value");
@@ -46,6 +50,8 @@ $('#yellow').on('click', function(){
 	currentGemValue+=parseInt(yellowValue);
 	$('#gemsCollected').html(currentGemValue);
 })
+
+//Red gem value 
 
 $('#red').attr("value", crystalsArr[2]);
 $('#red').on('click', function(){
@@ -55,6 +61,7 @@ $('#red').on('click', function(){
 	$('#gemsCollected').html(currentGemValue);
 })
 
+// Green gem value
 $('#green').attr("value", crystalsArr[3]);
 $('#green').on('click', function(){
 	var greenValue = $('#green').attr("value");
@@ -62,6 +69,34 @@ $('#green').on('click', function(){
 	currentGemValue+=parseInt(greenValue);
 	$('#gemsCollected').html(currentGemValue);
 })
-// if (currentGemValue==generatedNum)
+
+// Wins and Losses Tracker
+
+function results(){
+	if (currentGemValue==generatedNum){
+	win++
+	numbersGenerated()
+
+}
+	
+
+if (currentGemValue>generatedNum){
+	losses++
+	numbersGenerated()
+
+display()
+}
+
+}
+
+
+
+
+function display(){
+	document.getElementById('wins').innerHTML = wins;
+ 	document.getElementById('losses').innerHTML = losses;
+}
+	
+
 
 

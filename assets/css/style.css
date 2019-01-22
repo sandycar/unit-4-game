@@ -1,6 +1,9 @@
 body{
 	background: url("css/images/old_mathematics.png");
 }
+#gameName {
+	font-style: bold;
+}
 
 #randomNumber{
 	text-align: center;
