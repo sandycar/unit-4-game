@@ -2,9 +2,20 @@
 <html>
 <head>
 	<title>index</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+<style type="text/css" src = "assets/css/style.css"></style>
 <body>
-<h1></h1>
+<div class = "jumbotron jumbotron-fluid">
+	<div class = "container">
+		<h1 class = "display-3">Crystal Collector</h1>
+		<p class = "lead"> Welcome to the Crystal Collector Game!</p>
+		<hr class = "my-4">
+		<p class = "lead text-info"> To play: Try and match the number on the screen by clikcing on the crytsal. Watch your value add up, but try not to go over the number you're trying to match! Each crystal has a hidden value and once you've won, these crystals get a new value assigned to them and you get a new number generated to match.</p>
+		
+	</div>
+	
+</div>
 	<div id= 'Crytsals'>
 		<span>
 			<img id = "blue" src="assets/images/blue.png">
@@ -13,12 +24,8 @@
 			<img id = "yellow" src="assets/images/yellow.png">
 		</span>
 	</div>
-	<div id = 'randomNumber'>
-		
-	</div>
-	<div id = 'gemsCollected'>
-		
-	</div>
+	<div class = "display-4" id = 'randomNumber'></div>
+	<div class = "display-4"id = 'gemsCollected'></div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
